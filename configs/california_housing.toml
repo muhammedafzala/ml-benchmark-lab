@@ -1,0 +1,20 @@
+name = "California Housing median home value"
+task = "regression"
+
+[dataset]
+id = "sklearn:fetch_california_housing/StatLib/1990"
+path = "../data/raw/california_housing.csv"
+target = "MedHouseVal"
+numeric_features = [
+    "MedInc", "HouseAge", "AveRooms", "AveBedrms",
+    "Population", "AveOccup", "Latitude", "Longitude",
+]
+
+[split]
+test_size = 0.20
+random_state = 42
+
+[benchmark]
+cv_folds = 5
+target_label = "100,000 USD"
+output = "../results/tmp/california-housing-benchmark"

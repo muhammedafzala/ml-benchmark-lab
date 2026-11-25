@@ -1,0 +1,19 @@
+name = "Used car price prediction"
+task = "regression"
+
+[dataset]
+id = "kaggle:nehalbirla/vehicle-dataset-from-cardekho:v4/CAR DETAILS FROM CAR DEKHO.csv"
+# Relative to this config file.
+path = "../data/raw/CAR DETAILS FROM CAR DEKHO.csv"
+target = "selling_price"
+numeric_features = ["year", "km_driven"]
+categorical_features = ["fuel", "seller_type", "transmission", "owner"]
+
+[split]
+test_size = 0.20
+random_state = 42
+
+[benchmark]
+cv_folds = 5
+target_label = "INR"
+output = "../results/tmp/cardekho-benchmark"

@@ -1,0 +1,29 @@
+name = "Breast Cancer Wisconsin (Diagnostic)"
+task = "classification"
+
+[dataset]
+id = "sklearn:load_breast_cancer/UCI/17"
+path = "../data/raw/breast_cancer.csv"
+target = "target"
+numeric_features = [
+    "mean radius", "mean texture", "mean perimeter", "mean area",
+    "mean smoothness", "mean compactness", "mean concavity",
+    "mean concave points", "mean symmetry", "mean fractal dimension",
+    "radius error", "texture error", "perimeter error", "area error",
+    "smoothness error", "compactness error", "concavity error",
+    "concave points error", "symmetry error", "fractal dimension error",
+    "worst radius", "worst texture", "worst perimeter", "worst area",
+    "worst smoothness", "worst compactness", "worst concavity",
+    "worst concave points", "worst symmetry", "worst fractal dimension",
+]
+
+[split]
+test_size = 0.20
+random_state = 42
+
+[benchmark]
+cv_folds = 5
+positive_label = 0
+positive_name = "Malignant"
+negative_name = "Benign"
+output = "../results/tmp/breast-cancer-benchmark"
