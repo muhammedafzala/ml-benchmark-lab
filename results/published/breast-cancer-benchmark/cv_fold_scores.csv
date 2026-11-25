@@ -1,0 +1,31 @@
+model,fold,f1
+Dummy (most frequent),1,0.0
+Dummy (most frequent),2,0.0
+Dummy (most frequent),3,0.0
+Dummy (most frequent),4,0.0
+Dummy (most frequent),5,0.0
+Logistic Regression,1,0.9538461538461539
+Logistic Regression,2,0.9855072463768116
+Logistic Regression,3,0.9705882352941176
+Logistic Regression,4,0.9850746268656716
+Logistic Regression,5,0.9565217391304348
+Decision Tree,1,0.8955223880597015
+Decision Tree,2,0.9295774647887324
+Decision Tree,3,0.8611111111111112
+Decision Tree,4,0.8923076923076924
+Decision Tree,5,0.9411764705882353
+Random Forest,1,0.9253731343283582
+Random Forest,2,0.9428571428571428
+Random Forest,3,0.9142857142857143
+Random Forest,4,0.9538461538461539
+Random Forest,5,0.9705882352941176
+K-Nearest Neighbors,1,0.9538461538461539
+K-Nearest Neighbors,2,0.9696969696969697
+K-Nearest Neighbors,3,0.927536231884058
+K-Nearest Neighbors,4,0.90625
+K-Nearest Neighbors,5,0.9850746268656716
+Gradient Boosting,1,0.9705882352941176
+Gradient Boosting,2,0.9577464788732394
+Gradient Boosting,3,0.927536231884058
+Gradient Boosting,4,0.9230769230769231
+Gradient Boosting,5,0.9714285714285714
